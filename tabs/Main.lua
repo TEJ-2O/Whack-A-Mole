@@ -9,8 +9,8 @@ function setup()
     noSmooth()
     noStroke()
     pushStyle()
-    sprite("Documents:enter")
-    enterButton = Button("Documents:enter", vec2(WIDTH/2, HEIGHT/2))
+    sprite("Project:mole")
+    enterButton = Button("Project:mole", vec2(WIDTH/2, HEIGHT/2))
 end
 function touched(touch)
     enterButton:touched(touch)
@@ -29,6 +29,6 @@ function draw()
     font("AmericanTypewriter-Bold")
     fontSize(50)
     -- Do your drawing here
-    text("Whack A Mole", WIDTH/2, HEIGHT/1.5)
+    text("Whack A Mole", WIDTH/2, HEIGHT/1.3)
 end
 
