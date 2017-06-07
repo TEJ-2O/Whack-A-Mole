@@ -8,6 +8,7 @@
 	<array>
 		<string>Main</string>
 		<string>DifficultySelect</string>
+		<string>InGame</string>
 		<string>HelperClass</string>
 	</array>
 	<key>Dependencies</key>

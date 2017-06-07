@@ -1,5 +1,4 @@
 -- Whack-A-Mole
-local enterButton
 
 -- Use this function to perform your initial setup
 function setup()
@@ -10,21 +9,18 @@ function setup()
     noStroke()
     pushStyle()
     sprite("Project:mole")
-    enterButton = Button("Project:mole", vec2(WIDTH/2, HEIGHT/2))
+    
+    Scene("diffcultySelect", DifficultySelect)
+    Scene("inGame",InGame)
+    Scene.Change("diffcultySelect")
 end
-function touched(touch)
-    enterButton:touched(touch)
-    if enterButton.selected == true then
-        
-    end
 
-end
 -- This function gets called once every frame
 function draw()
     -- This sets a dark background color 
     background(255, 255, 255, 255)
     
-    enterButton:draw()
+    
     
     
     -- This sets the line thickness
@@ -33,6 +29,11 @@ function draw()
     font("AmericanTypewriter-Bold")
     fontSize(50)
     -- Do your drawing here
-    text("Whack A Mole", WIDTH/2, HEIGHT/1.3)
+    
+    Scene.Draw()
 end
-
+function touched(touch)
+    
+    
+    Scene.Touched(touch)
+end
