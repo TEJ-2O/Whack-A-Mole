@@ -14,6 +14,10 @@ function setup()
 end
 function touched(touch)
     enterButton:touched(touch)
+    if enterButton.selected == true then
+        
+    end
+
 end
 -- This function gets called once every frame
 function draw()
