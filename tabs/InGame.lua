@@ -1,12 +1,17 @@
 InGame = class()
 
-function InGame:init(x)
+
+function InGame:init()
     -- you can accept and set parameters here
-    self.x = x
+    noFill()
+    noSmooth()
+    noStroke()
+    pushStyle() 
 end
 
 function InGame:draw()
     -- Codea does not automatically call this method
+    background(255, 0, 203, 255)
 end
 
 function InGame:touched(touch)

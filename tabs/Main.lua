@@ -1,5 +1,5 @@
 -- Whack-A-Mole
-
+lives = 0 
 -- Use this function to perform your initial setup
 function setup()
     noFill()
@@ -8,7 +8,7 @@ function setup()
     noSmooth()
     noStroke()
     pushStyle()
-    sprite("Project:mole")
+    -- sprite("Dropbox:mole")
     
     Scene("diffcultySelect", DifficultySelect)
     Scene("inGame",InGame)
